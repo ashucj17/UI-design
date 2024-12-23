@@ -1,0 +1,21 @@
+.container {
+  box-sizing: border-box;
+  padding: 40px;
+  width: 650px;
+  margin: 30vh auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+  box-shadow: 10px 10px 20px #d5d5d5, -10px -10px 20px #d5d5d5;
+}
+.one,
+.two,
+.three {
+  display: grid;
+  justify-content: start;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 5px;
+}
