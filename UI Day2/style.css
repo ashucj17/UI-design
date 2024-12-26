@@ -6,11 +6,15 @@
 .container {
   margin: 50px auto;
   width: 360px;
+  padding: 20px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: left;
   line-height: 25px;
+  background-color: rgb(5, 34, 60);
+  color: #f0f5fb;
+  border-radius: 8px;
 }
 .Card-type-text {
   margin-top: 25px;
@@ -28,9 +32,37 @@
 .master {
   display: flex;
   padding: 5px 10px;
-  background-color: #e0e0e0;
+  background-color: #f0f5fb;
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 img {
   width: 30px;
+}
+
+.cName,
+.cPass {
+  position: relative;
+}
+.tickmark {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.basic-details img {
+  width: 15px;
+}
+
+input {
+  padding: 5px;
+  width: 100%;
+  border: none;
+  background-color: #f0f5fb;
+  border-radius: 8px;
+}
+
+.basic-details input,
+.secondary-details input {
+  margin-bottom: 15px;
 }
