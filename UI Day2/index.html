@@ -41,19 +41,31 @@
             </div>
         </div>
         <div class="secondary-details">
-            <label for="expairy">expairy</label>
-            <input type="month" pattern="mm/yyy" name="" id="" min="2023" max="2040">
-            <label for="cvv">CVV</label>
-            <input type="number">
-            <label for="country">country</label>
-            <select name="country" id="">
-                <option value=""></option>
-                <option value="india"><img src="" alt="indian-flag">India</option>
-            </select>
-            <input type="checkbox" name="purchase" id="">
-            <label for="purchase">use this card for future purchase</label>
-            <input type="checkbox" name="terms" id="">
-            <label for="trrms">Accept the <a href=".">terms & conditions</a></label>
+            <div class="expiry">
+                <label for="expiry">Expiry</label>
+                <input class="expiry-input" type="month" pattern="mm/yyy" name="" id="" min="2023" max="2040">
+            </div>
+            <div class="cvv">
+                <label for="cvv">CVV</label>
+                <input type="number" class="cvv-input">
+            </div>
+            <div class="country">
+                <label for="country">Country</label>
+                <select name="country" id="">
+                    <option value=""></option>
+                    <option value="india" class="country-input"><img src="" alt="indian-flag">India</option>
+                </select>
+            </div>
+        </div>
+        <div class="last-section">
+            <div class="purchase">
+                <input class="checkmark" type="checkbox" name="purchase" id="">
+                <p>use this card for future purchase</p>
+            </div>
+            <div class="terms">
+                <input class="checkmark" type="checkbox" name="terms" id="">
+                <p>Accept the <a href=".">terms & conditions</a></p>
+            </div>
             <button class="add-card">Add Card</button>
         </div>
     </div>

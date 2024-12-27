@@ -12,7 +12,7 @@
   flex-direction: column;
   align-items: left;
   line-height: 25px;
-  background-color: rgb(5, 34, 60);
+  background-color: #05223c;
   color: #f0f5fb;
   border-radius: 8px;
 }
@@ -54,7 +54,8 @@ img {
   width: 15px;
 }
 
-input {
+input,
+select {
   padding: 5px;
   width: 100%;
   border: none;
@@ -65,4 +66,45 @@ input {
 .basic-details input,
 .secondary-details input {
   margin-bottom: 15px;
+}
+
+.secondary-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.expiry,
+.country,
+.cvv {
+  margin: 5px;
+}
+
+.last-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.purchase,
+.terms {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+
+.checkmark {
+  width: 20px;
+  margin: 0;
+}
+a {
+  color: #f0f5fb;
+}
+
+.add-card {
+  padding: 8px;
+  border-radius: 8px;
+  color: #05223c;
+  font-weight: bold;
 }
